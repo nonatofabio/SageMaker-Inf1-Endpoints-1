@@ -50,7 +50,7 @@ class ScoringService(object):
         """Get the model object for this instance, loading it if it's not already loaded."""        
 
         if cls.model == None:
-            cls.model = torch.jit.load(os.path.join(model_path, 'neuron_compiled_model.pt'))
+            cls.model = torch.jit.load(os.path.join(model_path, 'neuron_compiled_bert_model.pt'))
             print('model loaded')
             #print(cls.model)          
             

@@ -20,4 +20,4 @@ encoded_sentence = tokenizer.encode_plus(sentence1, sentence3, max_length=128, p
 example_inputs = encoded_sentence['input_ids'], encoded_sentence['attention_mask'], encoded_sentence['token_type_ids']
 model_neuron = torch.neuron.trace(model, example_inputs, compiler_args=['-O2'], verbose=1, compiler_workdir='./compile')
 
-model_neuron.save('neuron_compiled_bert_model.pt')
+#model_neuron.save('test.pt')

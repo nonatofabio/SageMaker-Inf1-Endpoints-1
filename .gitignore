@@ -1,6 +1,6 @@
 lab-compile/model.tar.gz
 lab-*/*.pt*
-lab-compile/compile
+lab-compile/compile/
 **/**/*.ipynb_checkpoints/
 __pycache__/
 **/*logs/
